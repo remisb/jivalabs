@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title>Jiva Labs - Home page</title>
+
+    <style>
+      .div1 {
+        top: 0;
+        min-height: 50%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        background-color: rgb(242,242,240);
+      }
+      .div2 {
+        top: 50%;
+        min-height: 50%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        background-color: rgb(236,236,234);
+      }
+      body, html {
+        height: 100%;
+      }
+      .hero {
+        background-image: url(img/abstract-painting-art-colorful-original-5616x3744.jpg);
+        background-position: center center;
+        /* background-size: cover; */
+        background-size: 100%;
+        background-repeat: no-repeat;
+        /* background-color: rgb(232,232,230); */
+      }
+      @media only screen and (max-width: 768px) {
+        .hero {
+          background-size: 222%;
+        }
+      }
+      @media only screen and (max-width: 1023px) {
+        .hero {
+          background-size: 200%;
+        }
+      }
+    </style>
+
+</head>
+
+<body>
+  <div class="div1"></div>
+  <div class="div2"></div>
+  <section class="hero is-fullheight">
+      <div class="hero-head" style="padding-top: 40px">
+        <!-- <div class="container">
+          <img src="img/jiva-labs-1.png" alt="">
+          <h6 class="title is-6 has-text-warning has-text-weight-bold">Digital Colours Lab</h6>
+        </div> -->
+        <div class="container">
+            <img src="img/jiva-labs-1.png" alt="">
+          <p class="buttons">
+            <a class="button is-warning is-small">
+              <span class="icon">
+                <i class="fas fa-flask"></i>
+                <!-- <i class="fas fa-vial"></i> -->
+              </span>
+              <span>iColour iDeas Lab</span>
+            </a>
+          </p> 
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-3 has-text-white is-size-6-mobile">
+            implement your iDeas 
+            <br>
+            in our iColours Lab 
+          </h1>
+        </div>
+      </div>
+      <div class="hero-footer" style="padding-bottom: 40px">
+        <div class="container">
+          <p class="buttons">
+            <a class="button is-warning">
+              <span class="icon">
+                <i class="fas fa-cogs"></i>
+              </span>
+              <span>Technological stack</span>
+            </a>
+            <a class="button is-warning">
+              <span class="icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span>Contact us</span>
+            </a>
+          </p> 
+        </div>
+      </div>
+  </section> 
+</body>
+
+</html>
