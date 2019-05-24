@@ -27,7 +27,11 @@
         background-color: rgb(236,236,234);
       }
       body, html {
-        height: 100%;
+        height: auto;
+        /* background-color: bisque; */
+        /* background-image: radial-gradient( rgb(237,236,234), rgb(242,242,240), rgb(227,227,225)); rgb(226,226,224) */
+        background-image: linear-gradient(to bottom,  rgb(242,242,240), rgb(232,232,230));
+        background-repeat: no-repeat;
       }
       .hero {
         background-image: url(img/abstract-painting-art-colorful-1920x1280.jpg);
@@ -38,17 +42,20 @@
       }
       @media only screen and (min-width: 1280px) {
         .title {
-          padding-right: 70px; /* kad tekstas ant 'klecko' būtų tikslesnėje padėtyje */
-        }
-      }
+          padding-right: 70px; 
+          padding-top: 180px; 
+        } 
+      } 
       @media only screen and (min-width: 1024px) {
         .title {
           padding-right: 50px; /* kad tekstas ant 'klecko' būtų tikslesnėje padėtyje */
+          padding-top: 100px; /* kad tekstas ant 'klecko' būtų tikslesnėje vietoje */
         }
       }
       @media only screen and (min-width: 769px) {
         .title {
           padding-right: 50px; /* kad tekstas ant 'klecko' būtų tikslesnėje padėtyje */
+          padding-top: 100px;
         }
       }
       @media only screen and (max-width: 768px) {
@@ -57,7 +64,8 @@
           background-size: 222%;
         }
         .title {
-          padding-right: 40px; /* kad tekstas ant 'klecko' būtų tikslesnėje padėtyje */
+          padding-right: 40px; /* kad tekstas ant 'klecko' būtų tikslesnėje vietoje */
+          padding-top: 80px;
         }
       }
       @media only screen and (max-width: 1023px) {
@@ -70,8 +78,8 @@
 </head>
 
 <body>
-  <div class="div1"></div>
-  <div class="div2"></div>
+  <!-- <div class="div1"></div>
+  <div class="div2"></div> -->
   <section class="hero is-fullheight">
       <div class="hero-head">
         <!-- navigation bar -->
@@ -118,12 +126,6 @@
                     is-size-4-desctop
                     is-size-3-widescreen
                     is-size-3-fullhd">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             implement your 
             <br>
             digital iDeas 
@@ -136,7 +138,7 @@
           </h1>
         </div>
       </div>
-      <div class="hero-footer" style="padding-bottom: 40px">
+      <div class="hero-footer">
       </div>
   </section> 
 </body>
