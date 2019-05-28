@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <title>Jiva Labs - Home page</title>
+</head>
+
+<body>
+  <section class="hero is-fullheight">
+    <div class="hero-head">
+      <!-- navigation bar -->
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <!-- Jiva Labs logo-->
+          <a class="navbar-item">
+            <img src="img/jiva-labs-1.png" width="90" height="28">
+          </a>
+          <!-- /Jiva Labs logo-->
+
+          <!-- nav bar burger-->
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarBurger">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+          <!-- /nav bar burger-->
+        </div>
+
+        <div id="navBarBurger" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              About us
+            </a>
+
+            <a href="technologicalStack.html" class="navbar-item">
+              Technological stack
+            </a>
+
+            <a class="navbar-item">
+              Contact us
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- /navigation bar -->
+    </div>
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-mobile is-multiline is-vcentered">
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen">
+            <article class="media notification has-background-white">
+              <div class="media-content">
+                <div class="content">
+                  <img src="img/vuejs.png">
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen">
+            <article class="media notification has-background-white">
+              <div class="media-content">
+                <div class="content">
+                  <img src="img/bulma-logo.png">
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen">
+            <article class="media notification has-background-white">
+              <div class="media-content">
+                <div class="content">
+                  <img src="img/Go.png">
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen">
+            <article class="media notification has-background-white">
+              <div class="media-content">
+                <div class="content">
+                  <img src="img/amp.png">
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen">
+            <article class="media notification has-background-white">
+              <div class="media-content">
+                <div class="content">
+                  <img src="img/pwa.png">
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen">
+            <article class="media notification has-background-white">
+              <div class="media-content">
+                <div class="content">
+                  <img src="img/mongo.jpg">
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen">
+            <article class="media notification has-background-white">
+              <div class="media-content">
+                <div class="content">
+                  <img src="img/mysql.png">
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen">
+            <article class="media notification has-background-white">
+              <div class="media-content">
+                <div class="content">
+                  <img src="img/docker.png">
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen">
+            <article class="media notification has-background-white">
+              <div class="media-content">
+                <div class="content">
+                  <img src="img/java.png">
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-footer">
+    </div>
+  </section>
+</body>
+
+<script>
+  function activateHamburger() {
+    document.getElementById('navbarBasicExample').classList.toggle('is-active');
+    document.getElementById('navbarBasicExample').classList.toggle('is-active');
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+</script>
+
+</html>
