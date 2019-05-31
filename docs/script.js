@@ -1,17 +1,9 @@
 import { html, render } from 'lit-html';
 
-// const template = document.createElement('template');
-// template.innerHTML = `
-// <style>
-// @import "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css";
-// </style>`;
-
 class AppNavbar extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-
-    // this.shadowRoot.appendChild(template.content.cloneNode(true));
 
     const navBarTemplate = html`
       <!-- navigation bar -->
@@ -56,4 +48,3 @@ class AppNavbar extends HTMLElement {
 }
 
 window.customElements.define('app-navbar', AppNavbar);
-// window.customElements.define('app-navbar', AppNavbar);
